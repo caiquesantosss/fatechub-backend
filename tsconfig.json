@@ -1,0 +1,27 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "lib": ["ES2024"],
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@domain/*": ["src/domain/*"],
+      "@application/*": ["src/application/*"],
+      "@tests/*": ["tests/*"], 
+      "@core/*": ["src/core/*"]
+    },
+
+    "outDir": "dist"
+  },
+  "include": ["src", "tests"],
+  "exclude": ["node_modules"]
+}
